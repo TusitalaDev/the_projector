@@ -17,7 +17,7 @@ brown button :rgb(189,159,95);
 body {
 	/*margin-top: 50px;*/
 	font-family: Gotham, 'proxima-nova', 'Raleway', Helvetica, sans-serif;
-	font-size: px;
+	font-size: 15px;
 	background: rgb(0,0,0);
 	color: #fff;
 	margin-bottom: 100px;
@@ -112,8 +112,9 @@ a.btn-default {
 
 a.btn-default:focus,
 a.btn-default:hover {
-	/*background: transparent;*/
-	border-color: #fff;
+	background: rgb(189,159,95);
+	border-color: rgb(189,159,95);
+	color: #fff;
 }
 
 a.btn-primary {
@@ -124,8 +125,11 @@ a.btn-primary {
 
 a.btn-primary:focus,
 a.btn-primary:hover {
-	background: transparent;
-	border-color: #fff;
+	/*background: transparent;
+	border-color: rgb(189,159,95);*/
+	background: rgb(189,159,95);
+	border-color: rgb(189,159,95);
+	color: #fff;
 }
 
 .btn-success {
@@ -340,6 +344,76 @@ div.two-btn-lay:not(:last-child) {
 	background-color: black;
 }
 
+.nav.nav-pills>li>a{
+	font-size: 0.6em;
+	color: rgb(170,170,170);
+	font-weight: 100;
+	border-bottom: solid 1px rgb(50,50,50);
+	border-radius: 0px;
+	padding: 15px 0;
+}
+
+.nav>li.active>a {
+	color: rgb(189,159,95) !important;
+	font-weight: 500;
+}
+
+
+
+.nav-pills>li.active>a, 
+.nav-pills>li.active>a:focus, 
+.nav-pills>li.active>a:hover {
+	background-color: transparent;
+}
+
+.tab-content {
+	padding: 15px 0;
+}
+
+.cust-tab>ul>li {
+	border: solid 1px rgb(180,180,180) ;
+}
+.cust-tab>ul>li>a {
+	color: #fff !important;
+}
+
+.cust-tab>ul>li.active {
+	border: none ;
+	background-color: rgb(189,159,95);
+
+}
+.cust-tab>ul>li.active>a {
+	color: #fff !important;
+}
+.nav.nav-pills>li>a {
+	text-transform: uppercase;
+}
+
+.nav-side-tab {
+	width:80%; 
+	display:inline-block
+}
+	
+
+/*BREADCRUMB*/
+
+.breadcrumb {
+	background-color: transparent;
+	font-size: 0.70em;
+	padding-left: 0px;
+	
+}
+
+.breadcrumb>li>a,
+.breadcrumb>.active {
+	color: rgb(170,170,170);
+}
+
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "\00a0\00a0\003e\00a0\00a0";
+}
 
 /*hero*/
 
@@ -456,6 +530,10 @@ div.two-btn-lay:not(:last-child) {
 	border:solid 1px rgb(170,170,170); 
 	padding: 13px 0 11px; 
 	font-size:0.8em
+}
+
+.mov-div {
+	margin-top: 25px;
 }
 
 /*layout*/
@@ -658,6 +736,10 @@ footer li.signup-link a:hover {
     position: relative;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.no-pad-right {
+	padding-right: 0px;
 }
 
 
